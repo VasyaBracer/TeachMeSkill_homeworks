@@ -1,0 +1,25 @@
+.bike-catalog-desc {
+    display: inline-block;
+    width: 40%;
+}
+
+.bike-catalog-element {
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+    
+}
+
+.bike-catalog-img {
+    width: 16%;
+    display: inline-block;
+}
+
+
+ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+table tbody td {
+    border-style: solid;
+}
