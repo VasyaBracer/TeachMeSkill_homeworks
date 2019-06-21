@@ -9,6 +9,13 @@
     font-style: normal;
 }
 
+@font-face{
+    font-family: 'OpenSansBold';
+    src: url('../font/OpenSans-Bold.woff');
+    font-weight: 700;
+    font-style: bold;
+}
+
 .page-container {
     height: 590px;
     align-self: center;
@@ -82,7 +89,7 @@
 .feature-header{
     display: block;
     text-align: center;
-    font-family: "Open Sans"; 
+    font-family: "OpenSansBold"; 
     font-size: 20px;
     color: #333333;
 }
