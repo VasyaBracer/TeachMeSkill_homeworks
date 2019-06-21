@@ -25,12 +25,13 @@
 }
 
 .intro-container {
+    margin-top: 200px;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 20%;
+    flex-grow: 2;
 }
 
 .intro-header {
@@ -52,25 +53,27 @@
 .intro-desc {
     align-self: center;
     display: flex;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     color: #86878b;
 }
 
 .feature-container {
+    margin-top: 60px;
     display: flex;
     align-content: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .feature { 
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 360px;
-    height: 190px;
+    height: 202px;
 
 }
 
