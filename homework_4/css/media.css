@@ -1,0 +1,46 @@
+
+@media(max-width: 510px) {
+    .menu a {
+        font-size: 0;
+    }
+
+    .menu a:before {
+        margin-right: 0;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .main-container {
+        max-width: 1024px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .promo {
+        background:#3b340d;
+        padding-top: 28px;
+    }
+
+    .logo {
+        background: none;
+    }
+
+    .menu {
+        width: 50%;
+        box-shadow: -3px -3px 0px 0px rgba(245, 197, 6, 0.27), -6px -6px 0px 0px rgba(245, 197, 6, 0.27);
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 7px;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+

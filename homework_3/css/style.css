@@ -14,10 +14,12 @@
 
 .home {
     margin: 0 auto;
-    width: 1440px;
+    width: 100%;
     height: 640px;
-    background-color: #16151b;
-    background-image: url('../img/intro.png');
+    background-color: #333333;
+    background-image: url('../img/intro.png') ;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 .header-wrapper {
@@ -27,7 +29,12 @@
 }
 
 .header-wrapper-right {
-      display: flex;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.header-wrapper-right li a {
+     color: white;
 }
 
 .header-wrapper-left {
@@ -39,7 +46,6 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 .header-logo {
       color: #ffffff;
       text-transform: uppercase;
@@ -73,38 +79,59 @@
     max-width: 1170px;
     margin: 0 auto;
     padding-top: 60px;
+    
 }
 
-.header-menu-element {
+.active { 
     display: inline-flex;
     flex-wrap: wrap;
+    order: 1;
     color: #ffffff;
     font-weight: 600;
-    margin: 10px;
     text-transform: capitalize;
 }
 
-
-.header-menu-element:before {
-    content: '';
-    display: block;
-    background-color: #008ed6;
-    width: calc(50%-1px);
-    height: 2px;
+.active a:hover {
+  text-decoration: none;
 }
 
-.header-menu-element:after {
+.active:before {
+  margin-top: 15px;
+    order: 2;
     content: '';
-    display: block;
     background-color: #008ed6;
-    width: calc(50%-1px);
+    width: calc(50% - 1px);
     height: 2px;
+    visibility: hidden;
+}
+
+.active:after {
+  margin-top: 15px;
+  order: 3;
+    content: '';
+    background-color: #008ed6;
+    width: calc(50% - 1px);
+    height: 2px;
+    margin-left: 2px;
+    visibility: hidden;
+}
+
+.active:hover:before {
+  visibility: visible;
+}
+
+.active:hover:after {
+  visibility: visible;
 }
 
 .intro-feature-container {
         margin-top: 82px;
-        height: 500px;
-        width: 480px;
+        height: 520px;
+        width: 1170px;
+}
+
+.intro-feature {
+  width: 480px;
 }
 
 .intro-feature h2 {
@@ -146,6 +173,11 @@
     color: #ffffff;
 }
 
+.phone-image {
+  position: absolute;
+  
+}
+
 /* Pricing block */
 
   a {
@@ -160,6 +192,7 @@
   button {
     min-width: 160px;
     height: 50px;
+    text-overflow: ellipsis;
     white-space: nowrap;
     padding: 0 12px;
     border: 1px #e0e0e0 solid;
@@ -224,6 +257,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .pricing_element {
@@ -303,3 +337,124 @@
   .pricing_description button {
     margin-top: 16px;
   }
+
+
+  .slider {
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slides {
+   
+    white-space:  nowrap;
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide {
+    display: inline-block;
+    height: 100%;
+  width: 100%;
+  }
+
+  .slide:first-child {
+    background-color: red;
+  }
+
+  .slide:first-child {
+    background-color: green;
+  }
+
+
+
+  /* Features block */
+
+
+  .features-container {
+    min-height: 574px;
+    border-bottom: #ededed solid;
+  }
+
+  .feature-container {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature { 
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 292px;
+    height: 257px;
+
+}
+
+@keyframes icon-rotate {
+from {
+  transform: rotate(0deg)
+}
+25%{
+  transform: rotate(90deg)
+}
+50% {
+  transform: rotate(180deg)
+}
+75% {
+  transform: rotate(270deg)
+}
+to {
+  transform: rotate(360deg)
+}
+}
+
+
+.feature-icon>img {
+  animation: icon-rotate  1.5s infinite;
+  animation-play-state: paused;
+}
+
+.feature-icon>img:hover {
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #999999;
+}
+
+.feature-header{
+    display: block;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+
+.feature-desc {
+    color: #86878b;
+    display: flex;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+
+#mapid { 
+  height: 180px;
+ }

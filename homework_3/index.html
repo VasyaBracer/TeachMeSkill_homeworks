@@ -6,6 +6,14 @@
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,600,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
     <title>Awesome</title>
 </head>
 
@@ -17,15 +25,17 @@
                     <div class="header-logo">lucid</div>
                     <div class="header-logo-small">ONEPAGE THEME</div>
                 </a>
-                <div class="header-wrapper-right">
-                    <a href="#" class="header-menu-element">home</a>
-                    <a href="#" class="header-menu-element">features</a>
-                    <a href="#" class="header-menu-element">about</a>
-                    <a href="#" class="header-menu-element">testimonials</a>
-                    <a href="#" class="header-menu-element">pricing</a>
-                    <a href="#" class="header-menu-element">contact</a>
-                </div>
-            </div>
+                
+                <ul class="header-wrapper-right">
+                    <li class="active"><a href="#">home</a></li>
+                    <li class="active"><a href="#">features</a></li>
+                    <li class="active"><a href="#">about</a></li>
+                    <li class="active"><a href="#">testimonials</a></li>
+                    <li class="active"><a href="#">pricing</a></li>
+                    <li class="active"><a href="#">contact</a></li>
+                </ul>
+
+        </div>
             <div class="intro-feature-container">
                 <div class="intro-feature">
                     <h2>introducing lucid theme</h2>
@@ -40,12 +50,78 @@
                         <button>download now</button>
                     </div>
                     <div class="intro-button">
-                            <button>view features</button>
+                        <button>view features</button>
                     </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="main-container features-container">
+        <div class="block_title">
+            <h2>product overview</h2>
+            <h1>List of amazing features</h1>
+        </div>
+        <div class="feature-container">
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./img/features-pc.png" alt="pc">
+                </div>
+                <div class="feature-header">
+                    Thoughtful Design
+                </div>
+                <div class="feature-desc">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever.
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./img/features-settings.png" alt="settings">
+                </div>
+                <div class="feature-header">
+                    Well Crafted
+                </div>
+                <div class="feature-desc">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever.
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./img/feature-like.png" alt="like">
+                </div>
+                <div class="feature-header">
+                    Easy to Customize
+                </div>
+                <div class="feature-desc">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever.
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <img src="./img/features-pc.png" alt="mobile">
+                </div>
+                <div class="feature-header">
+                    Easy to Customize
+                </div>
+                <div class="feature-desc">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever.
                 </div>
             </div>
         </div>
     </div>
+
+    
+
+    <!-- pricing -->
     <div class="main-container">
         <div class="block_title">
             <h2>quality has its price</h2>
@@ -114,6 +190,18 @@
             </div>
         </div>
     </div>
+
+
+    <div class="slider">
+        <div class="slides">
+        <div class="slide">slide1</div>
+        <div class="slide">slide2</div>
+        <div class="slide">slide3</div>
+    </div>
+    </div>
+
+    <div id="mapid"></div>
+    
 </body>
 
 </html>
