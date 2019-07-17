@@ -1,0 +1,14 @@
+{
+  "name": "homework_5_sass-git-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./styles/style.scss ./styles/output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.22.5"
+  }
+}
